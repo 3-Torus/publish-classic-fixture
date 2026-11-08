@@ -1,0 +1,12 @@
+apiVersion: apps.3torus.com/v1alpha1
+kind: App
+name: Classic Fixture (adapted)
+description: The publish-classic-fixture control case, with an app file.
+image: ghcr.io/stefanprodan/podinfo:6.7.1
+port: 9898
+health:
+  path: /readyz
+cpu: {}
+scaling:
+  min: 1
+  max: 1
