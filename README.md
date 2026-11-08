@@ -6,7 +6,7 @@ It is a *classic* repository on purpose: it is not adapted to 3-Torus, so it has
 no `.3torus/app.yaml` (only the `adapted` control variant adds one). Keep it
 that way; the publishing tests depend on it.
 
-**Variant on this branch: `adapted`** — the CONTROL case: the compose variant plus a valid .3torus/app.yaml. Switch back to compose after use.
+**Variant on this branch: `compose`** — a compose file whose first service names a public image, and a Dockerfile.
 
 The content of this branch is replaced, one ordinary commit at a time, by
 `scripts/publish-fixture-variant.sh` in the 3-Torus platform repository. Do not
