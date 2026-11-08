@@ -1,0 +1,10 @@
+# A classic compose file. Nothing in it is a secret.
+services:
+  web:
+    image: ghcr.io/stefanprodan/podinfo:6.7.1
+    ports:
+      - "9898:9898"
+    environment:
+      PODINFO_UI_MESSAGE: "Hello from a classic repository"
+      PODINFO_UI_COLOR: "#34577c"
+      PODINFO_LEVEL: info
